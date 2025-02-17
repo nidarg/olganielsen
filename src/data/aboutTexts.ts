@@ -21,6 +21,10 @@ export const aboutTexts = [
     content: `I made a deliberate decision to alternate between being employed in-house and self-employment as a means of accelerating my learning curve.\nThis is how I felt to be the perfect solution for me.\nCurrently, I find that I have greater satisfaction from being self-employed.\n\nBeing hired to fix a problem in the organization is quite a challenge but also an amazing opportunity to apply years of experience, and see a final result of your advice or hands-on solutions – this motivates me a lot.`
   },
   {
+title:"What are the advantages of pursuing a career in this field?",
+content:`If you choose to work in this field, you can be very certain that you can’t get bored. This field is ever-evolving, and every single day there are many challenges and new opportunities to learn even more. You work from hands-on to strategic data compliance and work closely with the organization at every level. Working in this field you will play a crucial role in safeguarding individuals’ personal data and ensuring organizational compliance with regulations. \nThis field is a multidisciplinary field, a mix of legal, technological and organizational aspects. You must stay updated with the latest developments and that helps your continuous learning and professional growth. `
+  },
+  {
     title: "What are the benefits of this job and also being self-employed?",
     content: `I value the flexibility to manage my time, select my projects, and choose my collaborations.The more complex area or project the better it is for me.\nI experience increased motivation and job satisfaction by engaging in work that aligns with my personal interests, passions, and area of expertise.The necessity to remain engaged and continually improve my skills aligns well with my personality and current stage of life.\nI now prioritize my own physical and mental health before saying yes to a project.\nHowever, I must say that it has not always been this way.`
   },
