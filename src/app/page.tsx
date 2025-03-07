@@ -20,7 +20,7 @@ export default function Home() {
         'home',
         'about',
         'board',
-        'boardMember',
+
         'podcast',
         'dpo-handbook',
         'contact',
@@ -155,53 +155,7 @@ export default function Home() {
         </section>
 
         <div className='section-divider' />
-
-        <section id='board' className='min-h-screen py-12 pattern-bg'>
-          <div className='section-content'>
-            <RevealOnScroll>
-              <h2 className='text-3xl font-bold mb-8 text-white'>
-                European DPO Association
-              </h2>
-              <div className='hover-card rounded-lg p-6'>
-                <p className='text-zinc-300'>
-                  <p>
-                    The European DPO Association will launch in 2025. Stay tuned
-                    for updates and&nbsp;
-                    <a
-                      href='https://www.linkedin.com/groups/8578566/'
-                      target='_blank'
-                      className='underline'
-                    >
-                      join the LinkedIn group
-                    </a>{' '}
-                    in the meantime.
-                  </p>
-                </p>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </section>
-
-        <div className='section-divider' />
-
-        <section id='boardMember' className='min-h-screen py-12 pattern-bg'>
-          <div className='section-content'>
-            <RevealOnScroll>
-              <h2 className='text-3xl font-bold mb-8 text-white'>
-                Board Member
-              </h2>
-              <div className='hover-card rounded-lg p-6'>
-                <p className='text-zinc-300'>
-                  Content is currently being updated.
-                </p>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </section>
-
-        <div className='section-divider' />
-
-        <section id='podcast' className='min-h-screen py-12 pattern-bg'>
+        <section id='podcast' className='min-h-[50vh] py-12 pattern-bg'>
           <div className='section-content'>
             <RevealOnScroll>
               <h2 className='text-3xl font-bold mb-12 text-white'>
@@ -213,8 +167,8 @@ export default function Home() {
                     <Image
                       src='/olga-photos/podcast.jpg'
                       alt='Podcast icon'
-                      width={200}
-                      height={200}
+                      width={350}
+                      height={350}
                       className='rounded-lg  transition-all duration-500'
                     />
                     <h3 className='text-xl font-semibold text-white'>
@@ -301,21 +255,60 @@ export default function Home() {
             </RevealOnScroll>
           </div>
         </section>
+        <div className='section-divider' />
+        <section id='board' className='min-h-[50vh] py-12 pattern-bg'>
+          <div className='section-content'>
+            <RevealOnScroll>
+              <h2 className='text-3xl font-bold mb-8 text-white'>
+                European DPO Association
+              </h2>
+              <div className='hover-card rounded-lg p-6'>
+                <div className='text-zinc-300'>
+                  <p>
+                    The European DPO Association will launch in 2025. Stay tuned
+                    for updates and&nbsp;
+                    <a
+                      href='https://www.linkedin.com/groups/8578566/'
+                      target='_blank'
+                      className='underline'
+                    >
+                      join the LinkedIn group
+                    </a>{' '}
+                    in the meantime.
+                  </p>
+                </div>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </section>
 
         <div className='section-divider' />
-
-        <section id='dpo-handbook' className='min-h-screen py-12 pattern-bg'>
+        <section id='dpo-handbook' className='min-h-[50vh] py-12 pattern-bg'>
           <div className='section-content'>
             <RevealOnScroll>
               <h2 className='text-3xl font-bold mb-12 text-white'>
                 Data Protection Officer – a practical handbook
               </h2>
-              <div className='hover-card rounded-lg p-6'>
-                <p className='text-zinc-300'>
-                  Data Protection Officer – a practical handbook has been a
-                  project in progress for a while now. It is anticipated to
-                  launch in 2025. Please stay tuned for updates.
-                </p>
+              <div className='relative'>
+                <RevealOnScroll>
+                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                    <Image
+                      src='/olga-photos/handbookPhoto.jpg'
+                      alt='handbook'
+                      width={400}
+                      height={400}
+                      className='object-cover'
+                      unoptimized
+                    />
+                    <div className='flex justify-center items-center'>
+                      <h3 className='text-xl font-semibold text-white bg-zinc-900/80 p-4 rounded-lg backdrop-blur-sm'>
+                        Data Protection Officer – a practical handbook has been
+                        a project in progress for a while now. It is anticipated
+                        to launch in 2025. Please stay tuned for updates.
+                      </h3>
+                    </div>
+                  </div>
+                </RevealOnScroll>
               </div>
             </RevealOnScroll>
           </div>
@@ -422,9 +415,12 @@ export default function Home() {
         <nav className='flex flex-col space-y-6'>
           {[
             { id: 'about', label: 'About' },
-            { id: 'board', label: 'European DPO Association' },
-            { id: 'boardMember', label: 'Board Member' },
             { id: 'podcast', label: 'PODCAST "Confessions of a DPO"' },
+            { id: 'board', label: 'European DPO Association' },
+            {
+              id: 'dpo-handbook',
+              label: 'Data Protection Officer - a practical handbook',
+            },
             { id: 'contact', label: 'Contact' },
           ].map(({ id, label }) => (
             <button
