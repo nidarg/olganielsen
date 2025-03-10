@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Olga Nielsen | Tech Lawyer & Data Compliance Expert',
   description:
-    'lga Nielsen is a tech lawyer with 10+ years of experience in GDPR, AI Act, NIS2, and data compliance. She specializes in AI, cybersecurity, and digital regulations.',
+    'Oga Nielsen is a tech lawyer with 10+ years of experience in GDPR, AI Act, NIS2, and data compliance. She specializes in AI, cybersecurity, and digital regulations.',
   keywords: [
     'Olga Nielsen',
     'Tech Lawyer',

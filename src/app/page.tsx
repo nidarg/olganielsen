@@ -70,11 +70,11 @@ export default function Home() {
             <RevealOnScroll>
               <div className='relative w-full h-[350px] sm:h-[600px] mt-4 sm:mt-0 mb-6 sm:mb-12 rounded-lg overflow-hidden'>
                 <Image
-                  src='/olga-photos/hero-photo.jpg'
+                  src='/olga-photos/heroPhoto.jpg'
                   alt='Professional background'
                   fill
                   className='object-contain sm:object-cover grayscale hover:grayscale-0 transition-all duration-500'
-                  priority
+                  unoptimized
                 />
                 <div className='absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900' />
               </div>
@@ -170,6 +170,7 @@ export default function Home() {
                       width={350}
                       height={350}
                       className='rounded-lg  transition-all duration-500'
+                      unoptimized
                     />
                     <h3 className='text-xl font-semibold text-white'>
                       About the Podcast
