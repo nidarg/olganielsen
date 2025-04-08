@@ -163,7 +163,7 @@ export default function Home() {
               </h2>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <div className='hover-card rounded-lg p-6 h-[400px] flex flex-col'>
-                  <div className='flex items-center gap-4 mb-4'>
+                  <div className='flex flex-col md:flex-row items-center gap-4 mb-4'>
                     <Image
                       src='/olga-photos/podcast.jpg'
                       alt='Podcast icon'
@@ -256,7 +256,7 @@ export default function Home() {
             </RevealOnScroll>
           </div>
         </section>
-        <div className='section-divider' />
+        {/* <div className='section-divider' />
         <section id='board' className='min-h-[50vh] py-12 pattern-bg'>
           <div className='section-content'>
             <RevealOnScroll>
@@ -281,7 +281,7 @@ export default function Home() {
               </div>
             </RevealOnScroll>
           </div>
-        </section>
+        </section> */}
 
         <div className='section-divider' />
         <section id='dpo-handbook' className='min-h-[50vh] py-12 pattern-bg'>
@@ -294,7 +294,7 @@ export default function Home() {
                 <RevealOnScroll>
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <Image
-                      src='/olga-photos/handbookPhoto.jpg'
+                      src='/olga-photos/handbookPhoto.png'
                       alt='handbook'
                       width={400}
                       height={400}
@@ -305,7 +305,8 @@ export default function Home() {
                       <h3 className='text-xl font-semibold text-white bg-zinc-900/80 p-4 rounded-lg backdrop-blur-sm'>
                         Data Protection Officer – a practical handbook has been
                         a project in progress for a while now. It is anticipated
-                        to launch in 2025. Please stay tuned for updates.
+                        to launch in 28<sup>th</sup> January 2026. Please stay
+                        tuned for updates.
                       </h3>
                     </div>
                   </div>
@@ -417,7 +418,7 @@ export default function Home() {
           {[
             { id: 'about', label: 'About' },
             { id: 'podcast', label: 'PODCAST "Confessions of a DPO"' },
-            { id: 'board', label: 'European DPO Association' },
+            // { id: 'board', label: 'European DPO Association' },
             {
               id: 'dpo-handbook',
               label: 'Data Protection Officer - a practical handbook',
